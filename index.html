@@ -1,15 +1,15 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Visualizing the Evolution of Formula One Performance Metrics (1950-2023)</title>
+    <title>Visualizing the Evolution of Formula One Performance Metrics (1950-2024)</title>
 </head>
 <body>
-<h1>Visualizing the Evolution of Formula One Performance Metrics (1950-2023)</h1>
+<h1>Visualizing the Evolution of Formula One Performance Metrics (1950-2024)</h1>
 <h2 class="byline"><a href="https://ari-s-123.github.io/Personal-Site/">By Aritra Saharay</a></h2>
 <div class="divider"></div>
-<h3>Note: 2024 season data was incomplete and has thus been filtered out. Results from Sprint Races and Indianapolis 500
-    have also not been considered.</h3>
+<h3>Note: Updated for 2024 full season results. Results from Sprint Races and Indianapolis 500 have not been considered.</h3>
 <div class="section">
     <p>Formula One (F1) stands as the pinnacle of motorsport, epitomizing the fusion of
         cutting-edge automotive technology, driver prowess, and strategic team
@@ -22,7 +22,7 @@
         F1.</p>
     <p>The primary objective of this project is to analyze and visualize the evolution
         of key performance metrics in Formula One (F1) over the period from 1950
-        to 2023. By examining metrics such as mean career win rates for drivers and
+        to 2024. By examining metrics such as mean career win rates for drivers and
         points per race for constructors, the project aims to uncover trends, assess the
         impact of regulatory changes, and highlight significant shifts in team and
         driver performances. These visualizations will provide valuable insights for
@@ -56,8 +56,8 @@
             </li>
             <li>Out of the drivers with at least 20 race starts, Juan Manuel Fangio appears to be the driver with the
                 best mean career finishing position of all time with an average finishing place of 4.79. However, it
-                must be noted that the next best driver according to this metric is Lewis Hamilton at 4.88, a driver
-                with a far greater total number of race starts at 332 compared to Fangio's 58.
+                must be noted that the next best driver according to this metric is Lewis Hamilton at 5.02, a driver
+                with a far greater total number of race starts at 356 compared to Fangio's 58.
             </li>
             <li>Out of the drivers with at least 20 race starts, Bernd Schneider appears to be the driver
                 with the worst mean career finishing position of all time with an average finishing place of 28.5.
@@ -145,8 +145,8 @@
     </figure>
     <figure class="fig"
             aria-label="Visualization of F1 Constructors' Performance over time">
-        <iframe width="1000" height="1961" frameborder="0"
-                src="https://observablehq.com/embed/16c850555e317203@latest?cells=filtersNote1%2Cviewof+constructorFilter%2Cviewof+minYear%2Cviewof+maxYear%2Cviewof+showsRegChanges%2Cchart1Notes%2Cchart1Stats%2Cidea1Chart1SelectionStats%2CconPointsPerRace%2Cchart2Notes%2Cchart2Stats%2Cidea1Chart2SelectionStats%2CconMeanFinishingPos&banner=false"></iframe>
+        <iframe title="F1 Constructors' Performance over time with Regulatory Changes" width="1000" height="1961" frameborder="0"
+                src="https://observablehq.com/embed/043eeea0b5d1a092?cells=filtersNote1%2Cviewof+constructorFilter%2Cviewof+minYear%2Cviewof+maxYear%2Cviewof+showsRegChanges%2Cchart1Notes%2Cchart1Stats%2Cidea1Chart1SelectionStats%2CconPointsPerRace%2Cchart2Notes%2Cchart2Stats%2Cidea1Chart2SelectionStats%2CconMeanFinishingPos&banner=false"></iframe>
         <figcaption class="fig-heading">Chart 1 Insights</figcaption>
         <ul>
             <li>Mercedes in 2015 had the highest mean points per race in a given season of all time at 37. This is
@@ -201,24 +201,24 @@
         their entire F1 career.</p>
     <figure class="fig"
             aria-label="Visualization of F1 Drivers' Career Winrate">
-        <iframe width="1000" height="2203" frameborder="0"
-                src="https://observablehq.com/embed/16c850555e317203@latest?cells=viewof+minRaces%2CnatCareerWins%2CnatMeanCareerWinrate%2CbdCareerWins%2CbdMeanCareerWinRate&banner=false"></iframe>
+        <iframe title="F1 Drivers' Career Winrate" width="1000" height="2203" frameborder="0"
+                src="https://observablehq.com/embed/043eeea0b5d1a092?cells=viewof+minRaces%2CnatCareerWins%2CnatMeanCareerWinrate%2CbdCareerWins%2CbdMeanCareerWinRate&banner=false"></iframe>
         <figcaption class="fig-heading">Insights</figcaption>
         <ul>
-            <li>Britain has the highest number of total wins at 309. Lewis Hamilton is responsible for roughly a
+            <li>Britain has the highest number of total wins at 317. Lewis Hamilton is responsible for roughly a
                 third of those. This country also has the highest number of race starts so I believe this
                 achievement can be attributed to the large size of this category.
             </li>
-            <li>The Netherlands has the highest mean career win rate of 10.55%, with Argentina following closely
-                behind with a mean career win rate of 10.15%. I believe this is likely due to the efforts of Max
+            <li>The Netherlands has the highest mean career win rate of 11.75%, with Argentina following closely
+                behind with a mean career win rate of 10.19%. I believe this is likely due to the efforts of Max
                 Verstappen and Juan Manuel Fangio and the possibility that in general there probably haven't been
                 too many drivers from these two countries compared to other countries with more total wins like
                 Germany and Britain.
             </li>
-            <li>The cohort born in the 1980s has the highest total number of wins at 258.
+            <li>The cohort born in the 1980s has the highest total number of wins at 260.
             </li>
             <li>The cohort born in the 1910s has the highest mean career win rate of 7.05%, with the 1980s and 1960s
-                following at 6.57% and 5.16%. Interestingly, the three driver champions with highest number of
+                following at 6.44% and 5.16%. Interestingly, the three driver champions with highest number of
                 titles (Schumacher, Hamilton, Fangio) are each from one of these cohorts.
             </li>
         </ul>
@@ -233,8 +233,8 @@
         for that year. I wanted to see if the budget cap had been successful in its goal of reducing the gap between the
         top and bottom teams in F1.</p>
     <p>For this task, I chose to use the distribution of mean points per race as the metric for comparison. Two periods
-        would be compared, 2018-2020 and 2021-2023. These three-year periods were chosen because the cost cap has only
-        been in effect recently since 2021, so I chose to compare the combined three-year points distribution before and
+        would be compared, 2017-2020 and 2021-2024. These four-year periods were chosen because the cost cap has only
+        been in effect recently since 2021, so I chose to compare the combined four-year points distribution before and
         after the implementation of the budget cap. The choice of mean points per race here is unaffected by any points
         system changes as there haven't been any of those in this time period except for the singular point for the
         fastest lap in a race introduced in 2019 that shouldn't skew results by a noticeable margin.</p>
@@ -244,14 +244,14 @@
         hue instead.</p>
     <figure class="fig"
             aria-label="Visualization of the impact of the 2021 budget cap on F1 constructor performance">
-        <iframe width="1000" height="1068" frameborder="0"
-                src="https://observablehq.com/embed/16c850555e317203@latest?cells=budgetCapPointsDist%2CbudgetCapPointsCon&banner=false"></iframe>
+        <iframe title="Impact of Budget Cap on F1 Constructor Performance" width="1000" height="1068" frameborder="0"
+                src="https://observablehq.com/embed/043eeea0b5d1a092?cells=budgetCapPointsDist%2CbudgetCapPointsCon&banner=false"></iframe>
         <figcaption class="fig-heading">Insights</figcaption>
         <ul>
-            <li>When spread out across three years, the budget cap seems to have increased the median points per
-                race by 1 but also decreased the lower and upper quartiles by 1. So, in terms of gap in points per
-                race the budget cap seems to not have had a meaningful impact. However, while this dataset does not
-                have details on qualifying pace gaps, that is one potential area for exploration.
+            <li>When spread out across four years, the budget cap seems to have increased the median points per race by
+                1 but also decreased the lower and upper quartiles by 1. So, in terms of gap in points per race the
+                budget cap seems to not have had a meaningful impact. However, while this dataset does not have details
+                on qualifying pace gaps, that is one potential area for exploration.
             </li>
             <li>The budget cap does not appear to have been completely effective in reducing the domination of all
                 the "top" teams, namely Mercedes, Ferrari, and Red Bull. Mercedes and Ferrari did experience a drop
@@ -271,23 +271,23 @@
         season in relation to their competition. I would define this metric as the interquartile range (75th Percentile
         - 25th Percentile) of the points that a given constructor scored per race during the selected season. I chose to
         use box plots once again to visualize this metric. To allow for interactive exploration across the widest range
-        of data, I implemented the ability to select a given season from 1950 to 2023.</p>
+        of data, I implemented the ability to select a given season from 1950 to 2024.</p>
     <figure class="fig"
             aria-label="Visualization of F1 constructor consistency by season">
-        <iframe width="1000" height="630" frameborder="0"
-                src="https://observablehq.com/embed/16c850555e317203@latest?cells=viewof+selectedSeason%2CseasonalPoinstDist&banner=false"></iframe>
+        <iframe title="F1 Constructor Consistency by Season" width="1000" height="630" frameborder="0"
+                src="https://observablehq.com/embed/043eeea0b5d1a092@1879?cells=viewof+selectedSeason%2CseasonalPoinstDist&banner=false"></iframe>
         <figcaption class="fig-heading">Insights</figcaption>
         <ul>
-            <li>Alfa Romeo and Alpha Tauri had the highest number of outlier results in 2023 at 3.
+            <li>Williams and Alpine had the highest number of outlier results in 2024 at 3.
             </li>
-            <li>Aston Martin, Ferrari, McLaren, and Mercedes were the only constructors in 2023 that did not have
-                any outlier results.
+            <li>Aston Martin, McLaren, and Red Bull were the only constructors in 2024 that did not have any extreme
+                outlier results.
             </li>
-            <li>Haas had the smallest interquartile range in 2023 for points per race at 0. They were the most
-                consistently performing constructor for that season, even if they were consistently poor-performing.
+            <li>Williams and Sauber had the smallest interquartile range in 2024 for points per race at 0. They were
+                the most consistently performing constructor for that season, even if they were consistently poor-performing.
             </li>
-            <li>McLaren had the largest interquartile range in 2023 for points per race at 16.75. They were the
-                least consistently performing constructor for that season.
+            <li>Red Bull had the largest interquartile range in 2024 for points per race at 17.25. They were the least
+                consistently performing constructor for that season.
             </li>
         </ul>
     </figure>
@@ -307,8 +307,8 @@
         champions or drivers who won with many teams vs just a single one.</p>
     <figure class="fig"
             aria-label="Network visualization of F1 driver champions to the constructor they won it with">
-        <iframe width="800" height="1003" frameborder="0"
-                src="https://observablehq.com/embed/b2777edd3d8bd091@latest?cells=minRelSize%2Cviewof+linkSizeFilter%2CdriverMinTitles%2Cviewof+titleNumFilter%2Cchart&banner=false"></iframe>
+        <iframe title="F1 Driver Title Contributions" width="800" height="1003" frameborder="0"
+                src="https://observablehq.com/embed/50679e20232c4bd4?cells=minRelSize%2Cviewof+linkSizeFilter%2CdriverMinTitles%2Cviewof+titleNumFilter%2Cchart&banner=false"></iframe>
         <figcaption class="fig-heading">Insights</figcaption>
         <ul>
             <li>Hamilton is responsible for more of Mercedes' driver titles than any other driver that has driven
@@ -345,30 +345,22 @@
         Europe.</p>
     <figure class="fig" id="Choropleth map visualization of mean finishing position of F1 drivers by country">
         <figcaption class="fig-heading">Note: Lower mean finishing position = better performance</figcaption>
-        <iframe width="100%" height="999" frameborder="0"
-                src="https://observablehq.com/embed/675f5d1449cebd1c@latest?cells=minDriversCountry%2Cviewof+minDrivers%2CminRacesDriver%2Cviewof+minRacesPerDriver%2Cscale%2Ctranslate%2Cmap&banner=false"></iframe>
+        <iframe title="Choropleth map visualization of mean finishing position of F1 drivers by country" width="100%" height="999" frameborder="0"
+                src="https://observablehq.com/embed/2b0687e0f853f381?cells=minDriversCountry%2Cviewof+minDrivers%2CminRacesDriver%2Cviewof+minRacesPerDriver%2Cscale%2Ctranslate%2Cmap&banner=false"></iframe>
         <figcaption class="fig-heading">Insights</figcaption>
         <ul>
-            <li>At first glance, Poland seems to have the best mean finishing position at 10.65 over 99 races.
+            <li>At first glance, Poland seems to have the best mean finishing position at 10.65 over 99 combined race starts.
                 However, this is due to the fact they have only ever had a single driver compete under their flag,
-                Robert Kubica, who appears to have been a great performer relative to the average F1 driver
-                throughout the sport's history. Raising the minimum races per driver to 5 or 10 does not change this
-                fact as Kubica has taken part in several seasons worth of F1 races.
+                Robert Kubica, who appears to have been a great performer relative to the average F1 driver throughout the sport's history. Raising the minimum races per driver to 5 or 10 does not change this fact as Kubica has taken part in several seasons worth of F1 races.
             </li>
             <li>Raising both the minimum number of drivers and minimum races per driver to 5 makes Mexico stand out
-                with a mean finishing position of 13.01 across 6 drivers over 444 races. I believe that Sergio Perez
-                is largely responsible for this as he is the most successful Mexican driver in F1 history.
+                with a mean finishing position of 13.01 across 6 drivers over 468 combined race starts. I believe that Sergio Perez is largely responsible for this as he is the most successful Mexican driver in F1 history.
             </li>
             <li>Raising both the minimum number of drivers and minimum races per driver to 10 highlights Argentina
-                as the most successful with a mean finishing position of 12.81 across 10 drivers over 343 races. I
-                suspect that Juan Manuel Fangio's era of domination is the likely culprit behind this stat.
+                as the most successful with a mean finishing position of 12.81 across 10 drivers over 343 combined race starts. I suspect that Juan Manuel Fangio's era of domination is the likely culprit behind this stat.
             </li>
             <li>There are only 5 countries in the whole world who have had at least 20 drivers drive at least 20
-                races each in F1: Brazil, Germany, Italy, France, and the United Kingdom. Out of this, the UK
-                appears to have the best mean finishing position of 12.49 across 42 drivers over 3814 races. This
-                doesn't feel like a surprise, given that the UK has historically produced the highest number of F1
-                drivers' champions. However, it does show that at this point in time F1 has overall still been
-                largely historically populated by European drivers.
+                races each in F1: Brazil, Germany, Italy, France, and the United Kingdom. Out of this, the UK appears to have the best mean finishing position of 12.45 across 42 drivers over 3886 combined race starts. This doesn't feel like a surprise, given that the UK has historically produced the highest number of F1 drivers' champions. However, it does show that at this point in time F1 has overall still been largely historically populated by European drivers.
             </li>
         </ul>
     </figure>
@@ -384,7 +376,7 @@
         if two drivers have the same number of titles? Therefore, I wanted to employ the mean career finishing position
         metric to answer this question. I chose to compare mean career finishing position to total career races. For the
         choice of visualization idiom, I elected to utilize a scatter plot for this task as I believe that this is
-        likely the best way to handle the very large size of the data (755 drivers).</p>
+        likely the best way to handle the very large size of the data (758 drivers).</p>
     <p>I instantly identified an odd issue. The driver that was the best according to the chosen metric was one who had
         only driven a single F1 race in their entire career... To mitigate this oddity, I added the ability to filter
         out drivers who had less than the selected number of race starts to reduce the amount of noise and anomalies in
@@ -393,8 +385,8 @@
         the portion of the data that was currently selected through the filters.</p>
     <figure class="fig"
             aria-label="Visualization of the mean career finishing position of F1 drivers">
-        <iframe width="1000" height="997" frameborder="0"
-                src="https://observablehq.com/embed/16c850555e317203@latest?cells=viewof+nationalityFilter%2Cviewof+minRaces2%2Cidea7Stats%2Cidea7SelectionStats%2Cidea7Note%2CdriverMeanCareerPos&banner=false"></iframe>
+        <iframe title="Mean Career Finishing Position of F1 Drivers" width="1000" height="997" frameborder="0"
+                src="https://observablehq.com/embed/043eeea0b5d1a092@1880?cells=viewof+nationalityFilter%2Cviewof+minRaces2%2Cidea7Stats%2Cidea7SelectionStats%2Cidea7Note%2CdriverMeanCareerPos&banner=false"></iframe>
         <figcaption class="fig-heading">Insights</figcaption>
         <ul>
             <li>At first glance, Dorino Serafini appears to be the driver with the best mean career finishing
@@ -402,8 +394,8 @@
                 single F1 race in their entire career. If we filter out everyone with less than 20 race starts, Juan
                 Manuel Fangio appears to be the driver with the best mean career finishing position of all time with
                 an average finishing place of 4.79. However, it must be noted that the next best driver according to
-                this metric is Lewis Hamilton at 4.88, a driver with a far greater total number of race starts at
-                332 compared to Fangio's 58.
+                this metric is Lewis Hamilton at 5.02, a driver with a far greater total number of race starts at
+                356 compared to Fangio's 58.
             </li>
             <li>On the surface, Enrico Bertaggia appears to be the driver with the worst mean career finishing
                 position of all time of 38.83. Keep in mind that 39 is the worst possible finishing position
@@ -418,8 +410,8 @@
 </div>
 <div class="divider"></div>
 <footer>
-    Data Source: <a href="https://www.kaggle.com/rohanrao/formula-1-world-championship-1950-2020">Kaggle (sourced Oct
-    2024)</a>
+    Data Source: <a href="https://www.kaggle.com/rohanrao/formula-1-world-championship-1950-2020">Kaggle (sourced Apr
+    2025)</a>
 </footer>
 <link rel="stylesheet" href="app.css">
 </body>
